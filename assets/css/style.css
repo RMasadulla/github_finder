@@ -94,6 +94,7 @@ main {
     font-size: 2rem;
     margin-bottom: .5rem;
 }
+.userNameT{display: none;}
 .userBio p {
     font-size: 1.2rem;
     width: 60%;
@@ -150,4 +151,31 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .userBio h2, .userBio p {display: none;}
+    .profileInfo, .infoList {
+        flex-direction: column;
+    }
+    .userNameT{
+        display: block;
+        margin: 1rem 0 1.5rem 1rem;
+        padding: 5px 0;
+ 
+    }
+    .userBio{
+        margin-top: 5px;
+    }
+    .infoList{
+        margin-top: 0;
+    }
+    .infoList li {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+    }
+    .notFound {
+        font-size: 1rem;
+    }
 }
