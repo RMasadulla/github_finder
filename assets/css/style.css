@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+html{width: 100%;}
+body{height: 100vh; display: flex; flex-direction: column; justify-content: space-between;}
+a{text-decoration: none; outline: none;}
+ul{margin: 0;padding: 0;}
+li{list-style: none;}
+
+.container {width: 90%; margin: auto;}
+
+/* header part start here */
+header hr {
+    width: 90%;
+    margin: auto;
+}
+nav{ 
+    padding: 1rem 0;
+    background-color: #111;
+}
+nav a {
+    color: azure;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 2rem;
+}
+.searchSection {
+    padding: 1rem 0;
+}
+.searchSection h1 {
+    margin-bottom: .5rem;
+}
+.searchSection input{
+    width: 100%;
+    padding: .5rem 1rem;
+    border: 1px solid #111;
+    border-radius: 4px;
+    transition: border .3s ease;
+}
+.searchSection input:focus{
+    border: 1px solid aqua;
+}
+.searchSection #searchBtn {
+    width: 30%;
+    margin: 1rem auto;
+    padding: .4rem 0;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #111;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+.searchSection #searchBtn:hover {
+    color: #111;
+    background-color: #fff;
+    border: 1px solid #111;
+}
+
+/* main part start here */
+main {
+    padding: 2rem 0;
+}
+.profileInfo {
+    display: flex;
+}
+.profileInfo .userImg {
+    display: flex;
+    flex-direction: column;
+}
+.profileInfo .userImg a{
+    display: block;
+   text-align: center;
+   padding: .5rem 0;
+   border-radius: 5px;
+   color: #ECF0F1;
+   background: #2C3E50;
+   margin-top: 10px;
+
+}
+.profileInfo .userImg img {
+    height: 200px;
+    width: 200px;
+    border-radius: 4px;
+}
+.userBio {
+    margin: 2rem 0 0 3rem;
+}
+.userBio h2 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+.userBio p {
+    font-size: 1.2rem;
+    width: 60%;
+    line-height: 1.5;
+}
+.infoList {
+    margin: 2rem 0;
+    display: flex;
+}
+.infoList li {
+    width: 15%;
+    padding: .4rem 0;
+    border-radius: 5px;
+    margin: 0 7px;
+    text-align: center;
+    color: #fff;
+}
+.infoList li:first-of-type{
+    background-color: #2ECC71;
+}
+.infoList li:nth-of-type(2){
+    background-color: #E74C3C;
+}
+.infoList li:nth-of-type(3){
+    background-color: #95A5A6;
+}
+.infoList li:last-of-type{
+    background-color: #3498DB;
+}
+
+.ohtersInfo li {
+    border: 1px solid #7F8C8D;
+    padding: 1rem;
+    border-bottom: none;
+    font-size: 1.3rem;
+}
+.ohtersInfo li:last-of-type{
+    border-bottom: 1px solid #7F8C8D;
+}
+.notFound {
+    color: #E74C3C;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* footer part start here */
+footer {
+    padding: 1rem 0;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
