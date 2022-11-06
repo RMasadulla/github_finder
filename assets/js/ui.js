@@ -7,6 +7,7 @@ class UI {
         <div class="container profileInfo">
                     <div class="userImg">
                         <img src="${user.avatar_url}" alt="user">
+                        <h2 class="userNameT">${user.name}</h2>
                         <a href="${user.html_url}" class="viewBtn" target="_blank">View Profile</a>
                     </div>
                     <div class="userBio">
